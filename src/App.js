@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Breakfast from './pages/Breakfast';
 import Lunch from './pages/Lunch';
 import Dinner from './pages/Dinner';
+import './styles/App.css';
 
 function App() {
   

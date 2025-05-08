@@ -1,0 +1,87 @@
+.meal-page {
+    padding: 1rem 0;
+  }
+  
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+.page-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+  }
+  
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+.meal-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+.meal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+.meal-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+.meal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+.meal-card:hover .meal-image img {
+    transform: scale(1.05);
+  }
+  
+.meal-content {
+    padding: 1.5rem;
+  }
+  
+.meal-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+  }
+  
+.meal-description {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+.meal-price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3498db;
+  }
+  
+.breakfast-page .page-title {
+    color: #e67e22;
+  }
+  
+.lunch-page .page-title {
+    color: #27ae60;
+  }
+  
+.dinner-page .page-title {
+    color: #8e44ad;
+  }
