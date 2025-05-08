@@ -32,6 +32,11 @@ jobs:
             
             - name: Install dependencies
               run: npm ci
+
+            - name: Run linting
+              run: |
+                echo "Running code quality checks..."
+                npm run lint || (echo "::warning ::Linting issues found" && exit 1)
             
             - name: Build application
               run: |
