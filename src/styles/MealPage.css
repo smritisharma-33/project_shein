@@ -85,3 +85,13 @@
 .dinner-page .page-title {
     color: #8e44ad;
   }
+  
+@media (max-width: 768px) {
+    .page-title {
+      font-size: 2rem;
+    }
+    
+    .meal-grid {
+      grid-template-columns: 1fr;
+    }
+  }
