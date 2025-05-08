@@ -37,6 +37,9 @@ jobs:
               run: |
                 echo "Running code quality checks..."
                 npm run lint || (echo "::warning ::Linting issues found" && exit 1)
+
+            - name: Run unit tests
+              run: npm test -- --watchAll=false
             
             - name: Build application
               run: |
