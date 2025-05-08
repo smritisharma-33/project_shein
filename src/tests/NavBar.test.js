@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 
 test('renders all meal tabs', () => {
   render(
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
-    </BrowserRouter>
+    </HashRouter>
   );
   
   const breakfastLink = screen.getByText(/breakfast/i);
